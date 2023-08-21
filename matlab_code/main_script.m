@@ -57,14 +57,14 @@ while 1
         
         for j = 100:1:240                         % in 100 ~ 240Hz
             if (f_file_shift_p((N/Fs)*j,1) >= 1500)     % check if the amplitude over 1500
-                a = 1;                            % estimate the garbage as plastic
+                a = 1;                            % estimate the waste as plastic
                 break;
             end            
         end
         
         for j = 500:1:1200                        % in 500~1200Hz
             if (f_file_shift_p((N/Fs)*(j),1) >= 1000)   % check if the amplitude over 1500
-                a = 1;                            % estimate the garbage as plastic
+                a = 1;                            % estimate the waste as glass
                 break;
             end
         end
